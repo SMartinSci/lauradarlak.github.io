@@ -1,15 +1,14 @@
 # Site settings
-title: 
+author: Laura Darlak
+title: Me, Myself, and Ruby
 header-img: img/home-bg.png
 email: laura@polyporedesign.com
-copyright_name: lauradarlak
+copyright_name: Laura Darlak
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Finding Myself in the Code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  lauradarlak
-learn_profile: lauradarlak
-email_username: laura@polyporedesign.com
 
 # Build settings
 markdown: kramdown
