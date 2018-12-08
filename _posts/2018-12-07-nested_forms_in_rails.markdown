@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Nested Forms in Rails"
-date:       2018-12-08 03:36:31 +0000
+date:       2018-12-07 22:36:32 -0500
 permalink:  nested_forms_in_rails
 ---
 
@@ -10,7 +10,7 @@ Nested Forms in Rails allow you to handle multiple models, including creating an
 
 In order to take advantage of *magical* Rails Form Builder Helpers, the intended associations between your application models must be set up by defining the associations in your models and in respective database table migrations.
 
-For our example, we will create a dream journal with a form to record the content of a dream and tag relavent dream themes. The nested form will focuse on the `dream` and `theme` models.
+For our example, we will create a dream journal with a form to record the content of a dream and tag relavent dream themes. The nested form will focus on the `dream` and `theme` models.
 
 ## Models
 
@@ -33,9 +33,9 @@ class Theme
 end
 ```
 
-**`accepts_nessted_attributes_for :themes`**
+**`accepts_nested_attributes_for :themes`**
 
-This class method is essential to our nested form and required for mass assignment.  The `accepts_nessted_attributes_for` method will allow us to save theme attributes through the dream model within our ​`form_for(@dream)`​. As a result, an attribute writer for `themes` is created. The attribute writer in our example will be: `themes_attributes=(attributes)`
+This class method is essential to our nested form and required for mass assignment.  The `accepts_nested_attributes_for` method will allow us to save theme attributes through the dream model within our ​`form_for(@dream)`​. As a result, an attribute writer for `themes` is created. The attribute writer in our example will be: `themes_attributes=(attributes)`
 
 ## Controller
 
